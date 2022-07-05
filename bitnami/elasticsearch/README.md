@@ -173,7 +173,7 @@ $ helm delete --purge my-release
 | Name                                                 | Description                                                                                                                                        | Value               |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | `master.masterOnly`                                  | Deploy the Elasticsearch master-elegible nodes as master-only nodes. Recommended for high-demand deployments.                                      | `true`              |
-| `master.replicaCount`                                | Number of master-elegible replicas to deploy                                                                                                       | `2`                 |
+| `master.replicaCount`                                | Number of master-elegible replicas to deploy                                                                                                       | `1`                 |
 | `master.nameOverride`                                | String to partially override elasticsearch.master.fullname                                                                                         | `""`                |
 | `master.fullnameOverride`                            | String to fully override elasticsearch.master.fullname                                                                                             | `""`                |
 | `master.updateStrategy.type`                         | Master-elegible nodes statefulset stategy type                                                                                                     | `RollingUpdate`     |
@@ -255,7 +255,7 @@ $ helm delete --purge my-release
 
 | Name                                               | Description                                                                                                                                      | Value               |
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-| `data.replicaCount`                                | Number of data-only replicas to deploy                                                                                                           | `2`                 |
+| `data.replicaCount`                                | Number of data-only replicas to deploy                                                                                                           | `1`                 |
 | `data.nameOverride`                                | String to partially override elasticsearch.data.fullname                                                                                         | `""`                |
 | `data.fullnameOverride`                            | String to fully override elasticsearch.data.fullname                                                                                             | `""`                |
 | `data.updateStrategy.type`                         | Data-only nodes statefulset stategy type                                                                                                         | `RollingUpdate`     |
@@ -337,7 +337,7 @@ $ helm delete --purge my-release
 
 | Name                                                       | Description                                                                                                               | Value           |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| `coordinating.replicaCount`                                | Number of coordinating-only replicas to deploy                                                                            | `2`             |
+| `coordinating.replicaCount`                                | Number of coordinating-only replicas to deploy                                                                            | `1`             |
 | `coordinating.nameOverride`                                | String to partially override elasticsearch.coordinating.fullname                                                          | `""`            |
 | `coordinating.fullnameOverride`                            | String to fully override elasticsearch.coordinating.fullname                                                              | `""`            |
 | `coordinating.updateStrategy.type`                         | Coordinating-only nodes statefulset stategy type                                                                          | `RollingUpdate` |
@@ -411,7 +411,7 @@ $ helm delete --purge my-release
 
 | Name                                                 | Description                                                                                                                      | Value                        |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| `ingest.replicaCount`                                | Number of ingest-only replicas to deploy                                                                                         | `2`                          |
+| `ingest.replicaCount`                                | Number of ingest-only replicas to deploy                                                                                         | `1`                          |
 | `ingest.nameOverride`                                | String to partially override elasticsearch.ingest.fullname                                                                       | `""`                         |
 | `ingest.fullnameOverride`                            | String to fully override elasticsearch.ingest.fullname                                                                           | `""`                         |
 | `ingest.containerPorts.restAPI`                      | Elasticsearch REST API port                                                                                                      | `9200`                       |
